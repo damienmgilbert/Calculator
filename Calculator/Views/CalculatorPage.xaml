@@ -1,9 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="Calculator.MainPage"
+    x:Class="Calculator.Views.CalculatorPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:Calculator.ViewModels"
+    xmlns:views="clr-namespace:Calculator.Views"
+    x:DataType="viewModels:CalculatorViewModel">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Button">
@@ -31,7 +33,7 @@
             <Button
                 Grid.Row="0"
                 Grid.Column="0"
-                Text="History" />
+                Text="◷" />
             <Button
                 Grid.Row="0"
                 Grid.Column="1"
@@ -156,5 +158,4 @@
                 Text="=" />
         </Grid>
     </Grid>
-
 </ContentPage>
