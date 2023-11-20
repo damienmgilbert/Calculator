@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Calculator.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="WidthRequest" Value="64" />
+                <Setter Property="HeightRequest" Value="64" />
+                <Setter Property="CornerRadius" Value="50" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="0.2*,0.1*,0.1*,0.1*,0.5*">
+        <Entry
+            Grid.Row="0"
+            HorizontalOptions="End"
+            Text="top entry" />
+        <Entry
+            Grid.Row="1"
+            HorizontalOptions="End"
+            Text="top entry" />
+        <Entry
+            Grid.Row="2"
+            HorizontalOptions="End"
+            Text="top entry" />
+        <Grid Grid.Row="3" ColumnDefinitions="*,*,*,*,*,*">
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="History" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Unit Converter" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="2"
+                Text="Scientific" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="5"
+                Text="DEL" />
+        </Grid>
+        <Grid
+            Grid.Row="4"
+            ColumnDefinitions="*,*,*,*"
+            RowDefinitions="*,*,*,*,*">
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                BackgroundColor="Grey"
+                Text="C"
+                TextColor="Red" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                BackgroundColor="Grey"
+                Text="()" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="2"
+                BackgroundColor="Grey"
+                Text="%" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="3"
+                BackgroundColor="Grey"
+                Text="÷" />
+
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                BackgroundColor="Grey"
+                Text="7" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="Grey"
+                Text="8" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="2"
+                BackgroundColor="Grey"
+                Text="9" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="3"
+                BackgroundColor="Grey"
+                Text="×" />
+
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                BackgroundColor="Grey"
+                Text="4" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="Grey"
+                Text="5" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="2"
+                BackgroundColor="Grey"
+                Text="6" />
+            <Button
+                Grid.Row="2"
+                Grid.Column="3"
+                BackgroundColor="Grey"
+                Text="−" />
+
+            <Button
+                Grid.Row="3"
+                Grid.Column="0"
+                BackgroundColor="Grey"
+                Text="1" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="1"
+                BackgroundColor="Grey"
+                Text="2" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="2"
+                BackgroundColor="Grey"
+                Text="3" />
+            <Button
+                Grid.Row="3"
+                Grid.Column="3"
+                BackgroundColor="Grey"
+                Text="+" />
+
+            <Button
+                Grid.Row="4"
+                Grid.Column="0"
+                BackgroundColor="Grey"
+                Text="+/−" />
+            <Button
+                Grid.Row="4"
+                Grid.Column="1"
+                BackgroundColor="Grey"
+                Text="0" />
+            <Button
+                Grid.Row="4"
+                Grid.Column="2"
+                BackgroundColor="Grey"
+                Text="." />
+            <Button
+                Grid.Row="4"
+                Grid.Column="3"
+                BackgroundColor="Grey"
+                Text="=" />
+        </Grid>
+    </Grid>
+
+</ContentPage>
